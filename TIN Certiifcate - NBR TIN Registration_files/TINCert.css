@@ -1,0 +1,52 @@
+﻿body {
+}
+/*
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+*/
+
+.cert_table
+{
+    /*
+    border: 1px double black;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
+    */
+    
+    /*
+    background-image: url('../Images/tin_cert_back.jpg');
+    background-repeat: no-repeat;
+    */
+    
+    /*
+    background-color: #FFFFFF;    
+    border-style: double;
+    border-color: Black;
+    border-width: 1px;
+    */
+}
+
+.cert_div div 
+{    
+    /*background-position: center center;*/
+    /*
+    background-image: url('../Images/tin_cert_back.jpg');
+    background-repeat: no-repeat;
+    */
+    
+    /*background-color: #FFFFFF;*/
+}
+
+.cert_table,  .cert_table table /*, .cert_table table tr , .cert_table table tr td*/ {
+    background-color: #FFFFFF;
+    background: transparent;
+}
+
+.inner_cert_table 
+{
+    background-image: url('../Images/tin_cert_back.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;    
+}

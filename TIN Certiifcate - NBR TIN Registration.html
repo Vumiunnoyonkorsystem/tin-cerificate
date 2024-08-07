@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://secure.incometax.gov.bd/ViewCertiifcate -->
+<html lang="en" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>TIN Certiifcate - NBR TIN Registration</title>
+    <link href="https://secure.incometax.gov.bd/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width">
+
+    
+    <script src="./TIN Certiifcate - NBR TIN Registration_files/jquery"></script>
+
+    <link href="./TIN Certiifcate - NBR TIN Registration_files/css" rel="stylesheet">
+
+    <script src="./TIN Certiifcate - NBR TIN Registration_files/jqueryui"></script>
+
+    <script src="./TIN Certiifcate - NBR TIN Registration_files/modernizr"></script>
+
+    <script src="./TIN Certiifcate - NBR TIN Registration_files/jqueryval"></script>
+
+    <link href="./TIN Certiifcate - NBR TIN Registration_files/css" rel="stylesheet">
+
+     
+    <script src="./TIN Certiifcate - NBR TIN Registration_files/jquery.upload-1.0.2.min.js.download" type="text/javascript"></script>
+    <link href="./TIN Certiifcate - NBR TIN Registration_files/TINCert.css" rel="print stylesheet" type="text/css" media="print">
+    <link href="./TIN Certiifcate - NBR TIN Registration_files/PagedList.css" rel="stylesheet" type="text/css">
+    <link href="./TIN Certiifcate - NBR TIN Registration_files/External-Link.css" rel="stylesheet" type="text/css">
+    
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#div_modal").ajaxStart(function () {
+                $(this).show();
+            }).ajaxStop(function () {
+                $(this).hide();
+            });
+
+            $.ajaxSetup({
+                error: function (jqXHR, exception) {
+                    if (jqXHR.status === 0) {
+                        alert('Not connect.\n Verify Network.');
+                    } else if (jqXHR.status == 404) {
+                        alert('Requested page not found. [404]');
+                    } else if (jqXHR.status == 500) {
+                        alert('Internal Server Error [500]. You may need to Login again');
+                        //window.location = "../../Registration/Login";
+                    } else if (exception === 'parsererror') {
+                        alert('Requested JSON parse failed.');
+                    } else if (exception === 'timeout') {
+                        alert('Time out error.');
+                    } else if (exception === 'abort') {
+                        alert('Ajax request aborted.');
+                    } else {
+                        alert('Uncaught Error.\n' + jqXHR.responseText);
+                    }
+                }
+            });
+
+            BindDatePicker();
+
+        });
+
+        function BindDatePicker() {
+            $('.datefield').datepicker(function () {
+                dateFormat: "dd/mm/yy"
+            });
+
+            /*
+            var datepickers = $('.datefield').datetimepicker({
+            minDate: 0,
+            dateFormat: "dd/mm/yy",
+            timeFormat: "hh:mm"
+            ,
+            onSelect: function (date) {
+            var option = this.id == 'StartTime' ? 'minDate' : 'maxDate';
+            datepickers.not('#' + this.id).datepicker('option', option, date);
+            }
+            });
+            */
+
+        }
+        /*
+        $(window).load(function () {
+        //#div_final_result
+        $('#div_final_result').waitForImages(function () {
+        $("#div_final_result").jqprint({ importCSS: true });
+        //$.unblockUI();
+        });
+        });
+        */
+
+    </script>
+    <script type="text/javascript" language="javascript">
+        try {
+            var asyncState = true;
+            XMLHttpRequest.prototype.original_open = XMLHttpRequest.prototype.open;
+            XMLHttpRequest.prototype.open = function (method, url, async, user, password) {
+                //$('#ctl00_UpdateProgress1').show('fast');
+                async = asyncState;
+
+                var eventArgs = Array.prototype.slice.call(arguments);
+                //$('#ctl00_UpdateProgress1').hide('fast');
+                return this.original_open.apply(this, eventArgs);
+
+            }
+        } catch (e) {
+            alert(e.message);
+        } finally {
+            //$('#ctl00_UpdateProgress1').hide('fast');
+        }
+    
+    </script>
+     
+    <script>
+        // when the DOM is ready
+        document.addEventListener("DOMContentLoaded", function() { 
+          // get the the span element
+          const yrSpan = document.querySelector('.footer-year');
+          // get the current year
+          const currentYr = new Date().getFullYear();
+          // set the year span element's text to the current year
+          yrSpan.textContent = currentYr;
+        });
+    </script>
+</head>
+<body>
+    <div id="mainArea">
+        <header></header>
+        <section id="login">
+			
+
+<script type="text/javascript">
+    $(function () {
+        $('.menu').hover(
+function () {
+    $('.sub_menu', this).stop(true, true).slideDown(); /*slideDown the subitems on mouseover*/
+}, function () {
+    $('.sub_menu', this).stop(true, true).slideUp();  /*slideUp the subitems on mouseout*/
+});
+    });
+</script>
+
+    <!-- <a href="../../Content/Forms/Notice.htm" target="_blank">Notice</a> -->
+    <div>
+        <a href="https://secure.incometax.gov.bd/Admin">Home</a>
+        <a href="https://secure.incometax.gov.bd/Registration/Logout">Logout</a>
+        
+        <div class="menu">
+            <a href="https://secure.incometax.gov.bd/ViewCertiifcate#">Settings</a>
+            <div class="sub_menu">
+                <ul>
+                    <li><a href="https://secure.incometax.gov.bd/Users/changepassword">Change Password</a></li>
+                    <li><a href="https://secure.incometax.gov.bd/UserSecurityQuiz">Change Security</a></li>
+                        <li><a href="https://secure.incometax.gov.bd/MobileRequest">Change Mobile No</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul>
+
+        <li>User ID: 01567971152</li>
+        <li>User Type : Public</li>
+                <li>Last Login at : 07/08/2024 11:21:49</li>
+    </ul>
+
+
+
+<script>
+    $(()=>{ 
+            var data = [
+                    { "value": "", "text": "Verifiers" },
+                    { "value": "tpv", "text": "Third Party TIN Verification" },
+                    { "value": "jv", "text": "Jurisdiction Verification" },
+                    { "value": "rv", "text": "Return Verification" }
+                ];
+           for (var index = 0; index < data.length; index++) {
+              $('#js--verify').append('<option value="' + data[index].value + '">' + data[index].text + '</option>');
+           }
+    })
+
+</script>
+
+
+<script>
+    $(()=>{
+        $('#js--verify').change(function(){
+             var option = this.value;
+             var path = '/TINHome';
+
+            if(option==='tpv'){
+                path = "/VerificationUserRegistration";
+            }else if(option==='jv'){
+                path = "/JurisdictionVerification";
+            }else if(option==='rv'){
+                path = "/ReturnVerification";
+            };
+
+            window.location.href = path;
+        })
+    });
+</script>
+
+		</section>
+        <div id="body">
+            <div id="div_modal" class="loading modal">
+                <p>
+                    <img src="./TIN Certiifcate - NBR TIN Registration_files/loading.gif">
+                    Please Wait</p>
+            </div>
+            
+
+
+
+        <div class="left-menu">
+            <ul>
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/TinApplication/TinSource">TIN Application</a>
+                    
+                    <span class="menu_tips">For Registration/Reregistration of TIN</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/JurisdictionTransfer">File Transfer</a>
+                    
+                    <span class="menu_tips">For Transfer of Tax File from one Circle to another</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/Contact">Change Contact</a>
+                    
+                    <span class="menu_tips">For Change in Current Address</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/ViewCertiifcate">View TIN Certificate</a>
+                    
+                    <span class="menu_tips">For View of Print TIN Certificate</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/ViewCertiifcate/FindTicket">Reprint Ticket</a>
+                    
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/Revalidate">Revalidate</a>
+                    
+                    <span class="menu_tips">In Case of Change Information in NID</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/Token/Status">Ticket Status</a>
+                    
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/Token/Regenerate">Regenerate Ticket</a>
+                    
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/Vat">Vat/Business Info</a>
+                    
+                    <span class="menu_tips">Add, Delete Vat and Bussiness Information</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/ChangeStatus">Change Status</a>
+                    
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/InfoEditRequest">Edit/Correct/Update</a>
+                    
+                    <span class="menu_tips">Edit/Correct/Update Information</span>
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/ViewRequestStatus">View Request Status</a>
+                    
+                    
+                </li>					
+				 <li>
+
+                    <a href="https://secure.incometax.gov.bd/JurisdictionFinder">Jurisdiction Finder</a>
+                    
+                    
+                </li>					
+            </ul> 
+        </div>
+
+
+            <div style="overflow: hidden;">
+                
+                <div class="entry-panel" style="float: left;">
+                    
+                    <section class="content-wrapper main-content clear-fix before_footer">                   
+                        
+
+<script type="text/javascript">
+    /*
+    function PrintCertificate() {
+        var url = "../TinApplication/PrintPDF";
+    }
+    */
+
+    function PrintCertificate() {
+        Popup($('#div_final_result').html());
+        //printDiv('div_final_result');
+    }
+
+    function Popup(data) {
+        //alert('http://secure.incometax.gov.bd:80/Content/TINCert.css');
+        var cert_css = 'http://secure.incometax.gov.bd:80/Content/TINCert.css';
+        var mywindow = window.open('', null, 'height=200, width=400');
+
+        //var style = "<html><head><style>@media screen, print { @page { margin: 0; } body { margin: 1.6cm; } }</style>";
+        //var foot_style = "</body></html>";
+        //mywindow.document.write('<table></table>');
+        /*
+        var css_data = "";
+        $.get(cert_css, function (res) {
+            alert(res);
+            css_data = "<style>" + res + "</style></head><body>";
+        });
+        */
+        //alert(css_data);
+        //mywindow.document.write(style);        
+        //mywindow.document.write(css_data);
+        //alert(data);
+        mywindow.document.write(data);
+        //mywindow.document.write(foot_style);
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+    }
+
+    function printDiv(divName) { 
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        document.body.innerHTML = printContents;
+
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    }
+
+    function SaveCertificate() {
+        var url = "../../ViewCertiifcate/SavePdf";
+        var download_url = "../../ViewCertiifcate/GetPDF";
+
+        /*
+        var pdf_url = "../../ViewCertiifcate/ViewPDF?TIN_INFO_NO=" + $('#TIN_INFO_NO').val()
+        + "&REG_TYPE_NO=" + $('#REG_TYPE_NO').val() + "&IS_OLD_TIN=" + $('#IS_OLD_TIN').val();
+        */
+
+        /*
+        var pdf_url = "../../ViewCertiifcate/HtmlToPDf?TIN_INFO_NO=" + $('#TIN_INFO_NO').val()
+        + "&REG_TYPE_NO=" + $('#REG_TYPE_NO').val() + "&IS_OLD_TIN=" + $('#IS_OLD_TIN').val();
+        */
+        var pdf_url = "../../ViewCertiifcate/HtmlToPDf?TIN_INFO_NO=" + $('#TIN_INFO_NO').val();
+
+        //alert(pdf_url);
+        window.open(pdf_url);
+
+    }
+
+    function EmailCertificate() {
+        var pdf_url = "../../Email/SendEmail?TIN_INFO_NO=" + $('#TIN_INFO_NO').val();
+        window.open(pdf_url);
+    }
+</script>
+
+
+<h2></h2>
+
+<form action="https://secure.incometax.gov.bd/ViewCertiifcate" method="post">
+
+
+
+
+<div id="div_success"></div>
+
+
+        <input type="hidden" id="TIN_INFO_NO" name="TIN_INFO_NO" value="5280875" wfd-id="id0">
+        <input type="hidden" id="REG_TYPE_NO" name="REG_TYPE_NO" value="1" wfd-id="id1">
+        <input type="hidden" id="IS_OLD_TIN" name="IS_OLD_TIN" value="false" wfd-id="id2">
+        <div id="div_final_result">
+
+
+
+    <div class="cert_div">
+        
+        <div>
+                <img src="./TIN Certiifcate - NBR TIN Registration_files/tin_cert_back.png" style="position:absolute; z-index: -1; top: 225px; left:200px; height:300px; width:300px;">
+
+
+
+            <table class="cert_table" style="background-position: center center; border-style: solid; border-color: Black; border-width: 1px; font-size:medium;">
+                <tbody><tr>
+                    <td>
+                        <table class="cert_table" style="background-position: center center; border-style: solid; border-color: Black; border-width: 2px; font-size:medium;">
+                            <tbody><tr>
+                                <td>
+                                    <table class="cert_table" style="background-position: center center; border-style: solid; border-color: Black; border-width: 1px; font-size:medium;">
+                                        <tbody><tr>
+                                            <td>
+                                                
+                                                <table class="inner_cert_table" style="padding-left:5px; padding-right:5px">
+                                                    
+                                                    
+                                                    <tbody><tr>
+                                                        <td colspan="2" style="text-align: right;">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: center">
+                                                                <img style="text-align:center" src="./TIN Certiifcate - NBR TIN Registration_files/tin_cert_logo.png" alt="NBR" width="60px; height:60px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: center">
+                                                                <span style="font-size: large; font-weight: bold;">Government of the People's Republic
+                                                                    of Bangladesh</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: center">
+                                                                <span style="font-size: large; font-weight: bold;">National Board of Revenue</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: center">
+                                                                <span style="font-size: large">Taxpayer's Identification Number (TIN) Certificate</span>
+                                                            </td>
+                                                        </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" style="text-align: center;">
+                                                            <span style="font-weight: bold; font-size: large; text-align: center; text-decoration: underline; color: black">
+                                                                TIN : 561290730184 
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            &nbsp;<br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            This is to Certify that <span style="font-weight: bold;"> Badrunnesa Ahmed Tania
+                                                            </span>is a Registered Taxpayer of National Board of Revenue under the jurisdiction
+                                                            of <span style="font-weight: bold;">Taxes Circle-298 </span>
+                                                            , Taxes Zone <span style="font-weight: bold;">14, Dhaka</span>.
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <span style="font-weight: bold;">Taxpayer's Particulars : </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            1) Name : <span style="font-weight: bold;"> Badrunnesa Ahmed Tania </span>
+                                                        </td>
+                                                    </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                2) Father's Name : <span style="font-weight: bold;">Sayed Salah Uddin Ahmed </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                3) Mother's Name : <span style="font-weight: bold;">Hasina Begum </span>
+                                                            </td>
+                                                        </tr>                        
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                4.a) Current Address : <span style="font-weight: bold;">Kha-76, South Badda, Badda, Dhaka, PO : 1212 </span>
+                                                            </td>
+                                                        </tr>                        
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                4.b) Permanent Address : <span style="font-weight: bold;">22/1, Kunipara, Tejgaon I/A, Dhaka, PO : 1208, Bangladesh </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                5) Previous TIN : <span style="font-weight: bold;">Not Applicable </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                6) Status : <span style="font-weight: bold;">Individual </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <br><br>
+                                                            </td>
+                                                        </tr>
+
+
+                                                     
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            Date : June 28, 2020 
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <table width="100%">
+                                                                <tbody><tr>
+                                                                    <td style="width: 30%; vertical-align: top;">
+                                                                            <table style="width: 200px; vertical-align: top; text-align: left;">
+                                                                                <tbody><tr>
+                                                                                    <td colspan="2">
+                                                                                        <span style="font-weight: bold; text-align: left; text-decoration: underline;">Please
+                                                                                            Note:</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="width: 10px;">
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="text-align: left; font-size: x-small;">
+                                                                                    <td style="width: 10px; vertical-align: top;">
+                                                                                        1.
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        A Taxpayer is liable to filb the Return of Income under section 166 of the Income Tax Act, 2023.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="text-align: left; font-size: x-small;">
+                                                                                    <td style="width: 10px; vertical-align: top;">
+                                                                                        2.
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        Failure to file Return of Income under Section 166 is liable to-
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="text-align: left; font-size: x-small;">
+                                                                                    <td style="width: 10px; vertical-align: top;">
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        (a) Penalty under section 266; and
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="text-align: left; font-size: x-small;">
+                                                                                    <td style="width: 10px; vertical-align: top;">
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        (b) Prosecution under section 311 of the Income Tax Act, 2023.
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody></table>
+
+                                                                    </td>
+                                                                    <td style="text-align: center; width: 40%;">
+                                                                        <img src="./TIN Certiifcate - NBR TIN Registration_files/GetQRCode" height="150px;" width="150px;" alt="QR Code" style="text-align:center;">
+                                                                    </td>
+                                                                    <td style="text-align: left; width: 30%; vertical-align: top;">
+                                                                        <span style="text-align: left; font-size: x-small;">
+                                                                               <span style="font-weight: bold">Deputy Commissioner
+                                                                                of Taxes </span>
+                                                                            <br>
+                                                                            Taxes Circle-298
+                                                                            <br>
+                                                                            Taxes Zone 14, Dhaka
+                                                                            <br>
+                                                                            Address : 12/1, At-Tarick Tower, Bijoynagar, Dhaka
+                                                                            Phone : 
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                        </td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                        <tr>
+                                                            <td>
+                                                                &nbsp;<br>
+                                                            </td>
+                                                            <td style="text-align: right; font-size:x-small">
+                                                                Last Update : May 01, 2024 10:03:49 PM
+                                                            </td>
+                                                        </tr>
+
+                                                    <tr>
+                                                        <td colspan="2" style="text-align: center">
+                                                            <span style="text-align: center; text-decoration: underline; font-size: x-small;">N.
+                                                                B: This is a system generated certificate and requires no manual signature.
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" style="text-align: center">
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody></table>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+
+        </div>
+    </div>
+    <br>
+
+
+
+            
+
+        </div>
+            <br>
+            <div class="before_footer" id="div_print_command">
+                <input type="button" id="btnPrint" name="btnPrint" value="Print Certificate" onclick="PrintCertificate()" wfd-id="id3">
+                <input type="button" id="btnSave" name="btnSave" value="Save Certificate" onclick="SaveCertificate()" wfd-id="id4">
+                <input type="button" id="btnEmail" name="btnEmail" value="Email Certificate" onclick="EmailCertificate()" wfd-id="id5">
+            </div>
+</form>               
+
+
+                    </section>
+                </div>
+                
+
+            </div>
+        </div>
+
+        
+        
+    </div>
+    
+    <div id="footer">
+        <div id="nbrFooter">
+            © <span class="footer-year">2024</span> - National Board of Revenue (NBR) &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <a href="https://secure.incometax.gov.bd/Registration/Private_Policy">Privacy Policy </a>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Helpline:&nbsp;&nbsp;<img src="./TIN Certiifcate - NBR TIN Registration_files/helpline_icon.png" height="13px">
+            <span style="font-size: small; font-weight: bold; color: #006600">09611-777111 or 333
+            </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:<a href="mailto:info@incometax.gov.bd">info@incometax.gov.bd</a>
+        </div>
+        <div id="sitLogo">
+            Powered by&nbsp;&nbsp;<a href="http://www.synesisitltd.com/" target="_blank"><img src="./TIN Certiifcate - NBR TIN Registration_files/sit_logo.png" width="90" height="15">
+            </a>
+        </div>
+    </div>
+    <br>
+    
+
+</body></html>
